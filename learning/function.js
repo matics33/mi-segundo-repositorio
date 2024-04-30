@@ -1,45 +1,21 @@
-/*
+//Scope
 var funcion = function () { };
+let global = 'global';
 
-var numero1 = 8
-var numero2 = 10
+function suma(parametro1) {
+    parametro1 = 'local'
+}
 
-var numero3 = 5
-var numero4 = 9
+//Functions
 
-console.log(numero1 + numero2);
-console.log(numero3 + numero4) 
-hasta aqui es una manera de hacer esta operacion*/
+function suma(parametro1, parametro2) { }
 
-/*la siguiente es la manera mejorada*/
-/*
-var numero1 = 8
-var numero2 = 10
+var resta = function (parametro1, parametro2) {
+    console.log(parametro1 - parametro2)
+}
 
-var numero3 = 5
-var numero4 = 9
+const multiplicacion = (parametro1, parametro2) => {
+    return console.log(parametro1 * parametro2)
+}
 
-
-function suma() {
-    console.log(numero1 + numero2);
-    console.log(numero3 + numero4);
-
-};
-
-console.log(suma());
-
-siguiente operacion pasando numero 1 y numero 2 como un paramentro*/
-
-//var funcion = function () { };//
-
-function suma(numero1, numero2) {
-    (numero1 + numero2);
-};
-
-
-console.log(suma(240, 820));
-console.log(suma(112, 898));
-console.log(suma(740, 260));
-console.log(suma(425, 575));
-
-// mejor manera de hacer esta operacion 
+console.log(multiplicacion(3, 2))
